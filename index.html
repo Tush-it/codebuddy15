@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>codebuddy15 — Tushar Bharadwaj</title>
+  <meta name="description" content="Tushar Bharadwaj — Full-stack developer building beautiful, fast, SEO-optimized websites. Let's build something amazing together!" />
+  <meta name="keywords" content="Tushar Bharadwaj, codebuddy15, Web Developer, Portfolio, Web Design, SEO, Freelance Developer India" />
+  <meta name="author" content="Tushar Bharadwaj">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --clr-primary: #232323;
+      --clr-accent: #000000;
+      --clr-muted: #6b7280;
+      --clr-light: #f9fafb;
+      --ff-body: 'Inter', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body, h1, h2, h3, p { margin: 0; }
+    body {
+      font-family: var(--ff-body);
+      color: var(--clr-primary);
+      background: white;
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    .wrapper { width: min(90%, 70rem); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .nav__links {
+      display: flex;
+      gap: 1.5rem;
+      font-weight: 600;
+    }
+
+    .nav__link:hover {
+      color: var(--clr-accent);
+    }
+
+    .hero {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1c1a1a, #4f4d4d);
+      color: rgb(255, 255, 255);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .hero__title {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 1rem;
+    }
+
+    .hero__subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      max-width: 50ch;
+      margin-inline: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--clr-primary);
+      padding: 0.75em 2em;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #f3f4f6;
+    }
+
+    section {
+      padding: 5rem 1rem;
+    }
+
+    .section__title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .section__text {
+      text-align: center;
+      max-width: 60ch;
+      margin-inline: auto;
+      color: var(--clr-muted);
+    }
+
+    .services {
+      display: grid;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .service {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 1rem;
+      background: var(--clr-light);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    @media (min-width: 768px) {
+      .services {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .contact-form {
+      max-width: 32rem;
+      margin: auto;
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75em;
+      font-family: inherit;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--clr-muted);
+      padding: 2rem 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="wrapper nav">
+      <a href="#" class="logo"><strong>codebuddy15</strong></a>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#services">Services</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrapper" data-aos="fade-up">
+      <h1 class="hero__title">Hi, I'm Tushar Bharadwaj</h1>
+      <p class="hero__subtitle">A full-stack developer building high-impact, fast-loading websites for businesses and startups.</p>
+      <a href="#contact" class="btn">Let's Work Together</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="wrapper" data-aos="fade-up">
+      <h2 class="section__title">About Me</h2>
+      <p class="section__text">I’m Tushar, the founder of <strong>codebuddy15</strong>. I specialize in crafting stunning websites and digital experiences that drive real business results. Clean code, fast delivery, and client satisfaction is what I stand for.</p>
+      <img src="https://images.unsplash.com/photo-1581091012184-7c74e123344d?auto=format&fit=crop&w=1200&q=80" alt="Web Development" style="margin-top:2rem;">
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="wrapper" data-aos="fade-up">
+      <h2 class="section__title">Services</h2>
+      <p class="section__text">Everything you need to grow your digital presence.</p>
+
+      <div class="services">
+        <div class="service" data-aos="zoom-in">
+          <h3>Web Design</h3>
+          <p>Pixel-perfect, mobile-friendly websites tailored to your brand.</p>
+        </div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="100">
+          <h3>eCommerce</h3>
+          <p>Shopify, WooCommerce, custom carts—everything you need to sell online.</p>
+        </div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="200">
+          <h3>SEO & Growth</h3>
+          <p>Boost your Google ranking and bring in traffic that converts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrapper" data-aos="fade-up">
+      <h2 class="section__title">Start Your Project</h2>
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Describe your project..." required></textarea>
+        <button class="btn" type="submit">Send Email</button>
+        <button class="btn" type="button" onclick="sendWhatsApp()">Send via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © <span id="year"></span> codebuddy15. Built by Tushar Bharadwaj.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      const mailtoLink = `mailto:it.tushar30@gmail.com?subject=New Inquiry from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
+      window.location.href = mailtoLink;
+    });
+
+    function sendWhatsApp() {
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+      const whatsappNumber = "917982797030";
+      const text = `Hi Tushar, I'm ${name}. Here's my project details: ${message}`;
+      const link = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+      window.open(link, "_blank");
+    }
+  </script>
+</body>
+</html>
+
